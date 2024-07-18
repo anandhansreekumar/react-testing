@@ -1,6 +1,6 @@
 # React testing
 
-### Query methods
+### Element query methods
 
 1. getByRole
 2. getByLabelText
