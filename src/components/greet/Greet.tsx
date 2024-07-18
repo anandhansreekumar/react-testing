@@ -1,8 +1,6 @@
-type Props = {
-  name?: string;
-};
+import { Props } from "./greet.types";
 
-const Greet: React.FC<Props> = ({ name = "" }) => {
+const Greet: React.FC<Props> = ({ name = "Guest" }) => {
   return <div>Hello {name}</div>;
 };
 
