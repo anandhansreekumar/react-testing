@@ -1,6 +1,6 @@
 # React testing
 
-### Element query methods
+### Element query methods (getBy/queryBy/queryAllBy)
 
 1. getByRole
 2. getByLabelText
