@@ -8,3 +8,5 @@
 4. getByText
 5. getByDisplayValue
 6. getByAltText
+7. getByTitle
+8. getByTestId
