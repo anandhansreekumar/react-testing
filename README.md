@@ -2,7 +2,7 @@
 
 ### RTL Queries (getBy/getAllBy/queryBy/queryAllBy/findBy/findAllBy)
 
-getBy/getAllBy : to assert if elements are present in DOM
+getBy/getAllBy : to assert if elements are PRESENT in DOM
 queryBy/queryAllBy : to assert if elements are present/NOT in DOM
 findBy/findAllBy : to assset if elements are present/NOT after DELAY, etc.
 
