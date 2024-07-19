@@ -57,4 +57,21 @@ describe("Counter", () => {
     const countElement = screen.getByRole("heading");
     expect(countElement).toHaveTextContent("10");
   });
+
+  test("elements are focused in the right order", async () => {
+    render(<Counter />);
+
+    const amountInput = screen.getByRole("spinbutton");
+    const setButton = screen.getByRole("button", { name: "Set" });
+    const incrementButton = screen.getByRole("button", { name: "Increment" });
+
+    await userEvent.tab();
+    expect(incrementButton).toHaveFocus();
+
+    await userEvent.tab();
+    expect(amountInput).toHaveFocus();
+
+    await userEvent.tab();
+    expect(setButton).toHaveFocus();
+  });
 });
