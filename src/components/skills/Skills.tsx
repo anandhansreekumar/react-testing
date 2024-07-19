@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Props } from "./skills.types";
 
@@ -8,6 +8,12 @@ const Skills: React.FC<Props> = ({ skills }) => {
   const handleLogin = () => {
     setIsLoggedIn(false);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoggedIn(true);
+    }, 1001);
+  }, []);
 
   return (
     <>
